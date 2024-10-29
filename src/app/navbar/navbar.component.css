@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: slideDown 0.8s ease-out;
+}
+
+.navbar a {
+  color: #ffffff;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+.active-link {
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* Animação de deslizar para baixo */
+@keyframes slideDown {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
+

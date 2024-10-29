@@ -1,0 +1,13 @@
+<h2>Contato</h2>
+<form (ngSubmit)="enviarContato()">
+  <label for="nome">Nome:</label>
+  <input id="nome" type="text" [(ngModel)]="contato.nome" name="nome">
+
+  <label for="email">Email:</label>
+  <input id="email" type="email" [(ngModel)]="contato.email" name="email">
+
+  <label for="mensagem">Mensagem:</label>
+  <textarea id="mensagem" [(ngModel)]="contato.mensagem" name="mensagem"></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
