@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .chat-container {
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .chatbox {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  #userInput {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #sendButton {
+    width: 60px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Estilo básico para o chat */
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 600px;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+/* Estilo para as mensagens */
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* Estilo para as mensagens do usuário */
+.message.user {
+    align-self: flex-start;
+    background-color: #e1f5fe;
+    color: #00796b;
+}
+
+/* Estilo para as mensagens do bot */
+.message.bot {
+    align-self: flex-end;
+    background-color: #f1f8e9;
+    color: #33691e;
+}
+
+/* Estilo para as mensagens de erro */
+.message.error {
+    background-color: #ffebee;
+    color: #d32f2f;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Input e botão */
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40;
+}
