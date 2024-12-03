@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach GPT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <aside class="sidebar">
+      <h2>Chats</h2>
+      <ul>
+        <li>Babuínos</li>
+        <li>Novela da Record faz bem?</li>
+        <li>+</li>
+      </ul>
+    </aside>
+    <section class="chat-container">
+      <header class="chat-header">
+        <h1>Coach GPT</h1>
+      </header>
+      <div class="chatbox" id="chatBox">
+      </div>
+      <div class="input-container">
+        <input type="text" id="userInput" placeholder="Digite sua mensagem..." />
+        <button id="sendButton">Enviar</button>
+      </div>
+    </section>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
 </html>
